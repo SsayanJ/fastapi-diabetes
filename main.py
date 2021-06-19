@@ -17,6 +17,8 @@ from typing import List
 import json
 
 app = FastAPI()
+server = app.server
+
 model = joblib.load('models/diabetes_model.pkl')
 with open("models/model_config.json") as f:
     model_config = json.load(f)
