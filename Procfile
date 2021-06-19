@@ -1,0 +1,1 @@
+web: uvicorn service.model_as_service.fast_api.main:app --reload
